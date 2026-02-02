@@ -51,6 +51,26 @@ const products = [
     priceNew: "999",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKxl_Kkheld-K45Km3r8tfV6yDOLDEBYyAfgwKk2dSA-IzFgDkXNy16v--s9Y7-3zThOy2_uPqQdxblLqeRtsWDtydCMiZsQLKMb20rsQAXZMtzqtYgx_uL_buPjyVY3ZEdtGFDgxS3I1TkMQezB6FgnavMpRUxHAoDPa_NK_wei2NPU1GwOINFb4tOEl0QKXgFVYC1Q5zxJdQiC2ipvX7Jh484b0jHPgS9XgPEn-QCBDUrKWTmlnoPS2-XfZJ42g1n_lxy0PrpZg"
   },
+  {
+    brand: "XIAOMI",
+    name: "Xiaomi 13T Pro",
+    warranty: "2.0 years",
+    specs: ["12/512GB", "16/1TB"],
+    colors: ["#000000", "#32CD32", "#87CEEB"],
+    priceOld: "$899.00",
+    priceNew: "799",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
+  },
+  {
+    brand: "OPPO",
+    name: "OPPO Reno 11 Pro",
+    warranty: "1.0 year",
+    specs: ["12/256GB", "12/512GB"],
+    colors: ["#E0E5C9", "#F6E6D9"],
+    priceOld: "$599.00",
+    priceNew: "549",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
+  }
 ];
 
 const DealsSection: React.FC = () => {
@@ -78,7 +98,7 @@ const DealsSection: React.FC = () => {
                   <div className="relative w-full h-[220px] bg-gray-50 flex items-center justify-center p-6">
                     <span className="absolute top-4 left-4 z-10 bg-[#ffd1dc] text-[#592e36] text-[10px] font-bold px-2 py-1 rounded-md">Only 1 left!</span>
                     <button className="absolute top-4 right-4 z-10 text-blue-600 hover:text-red-500 transition-colors">
-                      <span className="material-symbols-outlined">favorite_border</span>
+                      <span className="material-symbols-outlined drop-shadow-md">favorite_border</span>
                     </button>
                     <div
                       className="w-full h-full bg-center bg-contain bg-no-repeat transform group-hover:scale-105 transition-transform duration-500"
@@ -118,8 +138,8 @@ const DealsSection: React.FC = () => {
                     <div className="mt-auto">
                       <div className="flex items-baseline mb-2">
                         <span className="text-gray-400 text-[11px] font-bold line-through mr-1.5">{product.priceOld}</span>
-                        <span className="text-[#111318] text-xl font-bold">${product.priceNew}</span>
-                        <span className="text-[#111318] text-xs font-bold ml-[1px]">.00</span>
+                        <span className="text-red-600 text-xl font-bold">${product.priceNew}</span>
+                        <span className="text-red-600 text-xs font-bold ml-[1px]">.00</span>
                       </div>
                       <div className="flex gap-1.5 mb-2 w-full">
                         <div className="flex-1 flex items-center justify-center bg-stock-blue-bg border border-stock-blue-text/20 rounded-[6px] py-2 px-2 text-center">

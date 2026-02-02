@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const offers = [
   {
@@ -14,7 +14,13 @@ const offers = [
         </div>
       </div>
     ),
-    text: "Store Locator →",
+    customContent: (
+      <div className="flex flex-col justify-center h-full">
+         <span className="text-[#111318] font-bold text-[15px] leading-tight">20 Branches all over country</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Store Locator →</span>
+      </div>
+    ),
+    text: "",
     subText: "",
     date: ""
   },
@@ -27,8 +33,14 @@ const offers = [
         <div className="w-2 h-2 rounded-full bg-[#F05A28] mb-1 ml-0.5"></div>
       </div>
     ),
-    text: "Installment 0%",
-    subText: "up to 10 months",
+    customContent: (
+      <div className="flex flex-col justify-center h-full">
+         <span className="text-[#111318] font-bold text-[15px] leading-tight">Aeon/ AYA/ CB Installments</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Loan Calculator →</span>
+      </div>
+    ),
+    text: "",
+    subText: "",
     date: ""
   },
   {
@@ -45,8 +57,14 @@ const offers = [
          <span className="text-[#0B2F5E] font-bold text-3xl tracking-tight">UOB</span>
       </div>
     ),
-    text: "Installment 0%",
-    subText: "up to 10 months",
+    customContent: (
+      <div className="flex flex-col justify-center h-full">
+         <span className="text-[#111318] font-bold text-[15px] leading-tight">Free delivery for orders above 7000 K</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Track Order →</span>
+      </div>
+    ),
+    text: "",
+    subText: "",
     date: ""
   },
   {
@@ -61,13 +79,47 @@ const offers = [
         </div>
       </div>
     ),
-    text: "On-top 3%* or 0% Installment + Cash back up to 40,000.-*",
+    customContent: (
+      <div className="flex flex-col justify-center h-full">
+         <span className="text-[#111318] font-bold text-[15px] leading-tight">Hotline No: 09751234567</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Call Now →</span>
+      </div>
+    ),
+    text: "",
     subText: "",
-    date: "8 Jan 26 - 8 Apr 26"
+    date: ""
+  },
+  {
+    id: 5,
+    bgColor: "bg-[#003D7C]", // BBL Blue
+    logo: (
+      <span className="text-white font-bold text-3xl">BBL</span>
+    ),
+    customContent: (
+      <div className="flex flex-col justify-center h-full">
+         <span className="text-[#111318] font-bold text-[15px] leading-tight">Delivery, Orders and Returns, Payment Information</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">See All FAQs →</span>
+      </div>
+    ),
+    text: "",
+    subText: "",
+    date: ""
   }
 ];
 
 const ForYouSection: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section className="w-full px-4 py-8 bg-white border-b border-gray-200">
        <div className="max-w-[1600px] mx-auto w-full relative px-2">
@@ -77,43 +129,46 @@ const ForYouSection: React.FC = () => {
 
           <div className="relative group/slider">
              {/* Navigation buttons */}
-             <button className="absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+             <button 
+                onClick={() => scroll('left')}
+                className="absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors cursor-pointer"
+             >
                 <span className="material-symbols-outlined text-xl">chevron_left</span>
              </button>
-             <button className="absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors">
+             <button 
+                onClick={() => scroll('right')}
+                className="absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors cursor-pointer"
+             >
                 <span className="material-symbols-outlined text-xl">chevron_right</span>
              </button>
 
-             <div className="flex overflow-x-auto gap-4 py-2 px-2 no-scrollbar snap-x snap-mandatory">
+             <div 
+                ref={scrollRef}
+                className="flex overflow-x-auto gap-4 py-2 px-2 no-scrollbar snap-x snap-mandatory scroll-smooth"
+             >
                 {offers.map((offer) => (
-                  <div key={offer.id} className="shrink-0 snap-start w-[280px] md:w-[320px] rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow bg-white flex flex-col h-[180px] group cursor-pointer">
+                  <div key={offer.id} className="shrink-0 snap-start w-[280px] md:w-[320px] rounded-xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-lg transition-shadow bg-white flex flex-col h-[180px] group cursor-pointer">
                      {/* Top Half - Brand Logo */}
                      <div className={`h-[55%] w-full ${offer.bgColor} flex items-center justify-center`}>
                         {offer.logo}
                      </div>
                      {/* Bottom Half - Offer Text */}
                      <div className="h-[45%] w-full p-4 flex flex-col justify-center bg-white relative">
-                        <p className="text-[#111318] font-bold text-sm leading-snug line-clamp-2">
-                          {offer.text} {offer.subText && <span className="font-bold">{offer.subText}</span>}
-                        </p>
-                        {offer.date && (
-                          <p className="text-gray-500 text-xs mt-1 font-medium">{offer.date}</p>
+                        {offer.customContent ? (
+                          offer.customContent
+                        ) : (
+                          <>
+                            <p className="text-[#111318] font-bold text-sm leading-snug line-clamp-2">
+                              {offer.text} {offer.subText && <span className="font-bold">{offer.subText}</span>}
+                            </p>
+                            {offer.date && (
+                              <p className="text-gray-500 text-xs mt-1 font-medium">{offer.date}</p>
+                            )}
+                          </>
                         )}
                      </div>
                   </div>
                 ))}
-                
-                {/* Extra duplicate card to make scrolling feel fuller if needed, or placeholders */}
-                 <div className="shrink-0 snap-start w-[280px] md:w-[320px] rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow bg-white flex flex-col h-[180px] group cursor-pointer">
-                     <div className="h-[55%] w-full bg-[#003D7C] flex items-center justify-center">
-                        <span className="text-white font-bold text-3xl">BBL</span>
-                     </div>
-                     <div className="h-[45%] w-full p-4 flex flex-col justify-center bg-white">
-                        <p className="text-[#111318] font-bold text-sm leading-snug">
-                          Cashback 15%
-                        </p>
-                     </div>
-                  </div>
              </div>
           </div>
        </div>

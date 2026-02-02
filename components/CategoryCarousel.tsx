@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 const categories = [
   {
@@ -49,23 +49,62 @@ const categories = [
     bgColor: "bg-white",
     borderColor: "border-transparent",
   },
+  {
+    name: "Smart Speaker",
+    tag: "Voice Control",
+    price: "$89",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB1Lt5-dNpllp0Dl-dc_pCr4LJwVdx_4sHhnGQuWChPK1rsKbQmWjWS1h2bkBFadrAmpC8qtAEH_tv90rZ4ZEytOyssJRYD7ZCTy2xg0ghZQaMM7QHQl40NFIAuX2wEpyhyF_RDLWe5SoFb6Xs_P1FiwO1mROBBhfEbz51SEVhoGgr6q_3GcWKGaKs4llRfObNSJJOZNaa-R5OzULVIqspkpLK5TIKMRHjlFBSv2IVXjDfYLyID8Dw_Iob4a5liTLN_lpwFYw969hI",
+    bgColor: "bg-white",
+    borderColor: "border-transparent",
+  },
+  {
+    name: "Gaming Mouse",
+    tag: "RGB Light",
+    price: "$59",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjSEOlL-150naiGeoD0910o2M0VbL74oA4LnRfdIO8Dsm-JlE3IVgd5utEwyM-Z0NxtGyqe0szz6AE_hciVi5ZX2WislVuTIloRGK-j0eBXtcuC2FcIfjgNuAMembt1AlOsMQVnZ9IoZ-PDCommGQKnKzuc-fNW_e-ffptESVELcWNViVGnQOUPhQe2PpW3Q_pDxHf03aR9hsC6mhJ-zOAUPfzw5FpG-tFU2y_xuwHXt5dIOFjw7f8_LVPI99q8MlBnKHTdfNLZwI",
+    bgColor: "bg-white",
+    borderColor: "border-transparent",
+  }
 ];
 
 const CategoryCarousel: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <section className="w-full bg-[#E0E7EB] py-4 border-b border-gray-200">
+    <section className="w-full bg-[#E0E7EB] pt-8 pb-4 border-b border-gray-200">
       <div className="max-w-[1400px] mx-auto relative px-4 lg:px-10">
         
+        <h2 className="text-[#111318] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Shop by products</h2>
+
         {/* Nav Buttons */}
-        <button className="absolute left-2 lg:-left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-colors">
+        <button 
+          onClick={() => scroll('left')}
+          className="absolute left-2 lg:-left-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-colors cursor-pointer"
+        >
           <span className="material-symbols-outlined text-lg">chevron_left</span>
         </button>
-        <button className="absolute right-2 lg:-right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-colors">
+        <button 
+          onClick={() => scroll('right')}
+          className="absolute right-2 lg:-right-2 top-1/2 -translate-y-1/2 z-10 w-8 h-8 rounded-full bg-white shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-colors cursor-pointer"
+        >
           <span className="material-symbols-outlined text-lg">chevron_right</span>
         </button>
 
         {/* Carousel Container */}
-        <div className="flex overflow-x-auto gap-3 no-scrollbar pb-1 snap-x snap-mandatory">
+        <div 
+          ref={scrollRef}
+          className="flex overflow-x-auto gap-3 no-scrollbar pb-1 snap-x snap-mandatory scroll-smooth"
+        >
           {categories.map((item, index) => (
             <div
               key={index}

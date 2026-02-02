@@ -1,51 +1,62 @@
-import React from 'react';
+import React, { useRef } from 'react';
+
+const brands = [
+  { name: "Apple", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png" },
+  { name: "Samsung", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/2560px-Samsung_Logo.svg.png" },
+  { name: "Google", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" },
+  { name: "Xiaomi", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Xiaomi_logo_%282021-%29.svg/2048px-Xiaomi_logo_%282021-%29.svg.png" },
+  { name: "OnePlus", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/OnePlus_logo_2020.svg/2560px-OnePlus_logo_2020.svg.png" },
+  { name: "Sony", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Sony_logo.svg/2560px-Sony_logo.svg.png" },
+  { name: "Huawei", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Huawei_Logo.svg/2560px-Huawei_Logo.svg.png" },
+  { name: "OPPO", logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/OPPO_Logo_2019.svg/2560px-OPPO_Logo_2019.svg.png" },
+];
 
 const BrandSection: React.FC = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const scrollAmount = 300;
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
-    <section className="w-full px-4 lg:px-40 py-8 flex justify-center bg-[#E0E7EB] border-t border-gray-300">
-      <div className="flex flex-col max-w-[1200px] flex-1 gap-6 relative">
-        <div className="flex items-center justify-between px-4">
+    <section className="w-full px-4 py-8 bg-[#E0E7EB] border-t border-gray-300">
+      <div className="max-w-[1600px] mx-auto w-full relative px-2">
+        <div className="flex items-center justify-between px-2 pb-4">
           <h2 className="text-[#111318] text-[22px] font-bold leading-tight tracking-[-0.015em]">Shop by Brand</h2>
           <a className="text-primary text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all" href="#">
             View All <span className="material-symbols-outlined text-sm">arrow_forward</span>
           </a>
         </div>
         
-        <div className="relative px-4 group/slider">
-          <button className="absolute -left-2 top-1/2 -translate-y-1/2 z-10 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-all">
+        <div className="relative group/slider">
+          <button 
+            onClick={() => scroll('left')}
+            className="absolute -left-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors cursor-pointer"
+          >
             <span className="material-symbols-outlined text-xl">chevron_left</span>
           </button>
-          <button className="absolute -right-2 top-1/2 -translate-y-1/2 z-10 size-9 rounded-full bg-white border border-gray-200 shadow-md flex items-center justify-center text-slate-600 hover:text-primary transition-all">
+          <button 
+            onClick={() => scroll('right')}
+            className="absolute -right-2 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-white shadow-lg border border-gray-100 flex items-center justify-center text-gray-700 hover:text-primary transition-colors cursor-pointer"
+          >
             <span className="material-symbols-outlined text-xl">chevron_right</span>
           </button>
 
-          <div className="flex overflow-x-auto gap-4 no-scrollbar pb-1 snap-x snap-mandatory">
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-gray-400 hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-gray-900 tracking-tight">Apple</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-[#1428a0] hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-[#1428a0] tracking-tighter">Samsung</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold tracking-tighter">
-                <span className="text-[#4285F4]">G</span><span className="text-[#EA4335]">o</span><span className="text-[#FBBC05]">o</span><span className="text-[#4285F4]">g</span><span className="text-[#34A853]">l</span><span className="text-[#EA4335]">e</span>
-              </span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-[#FF6900] hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-[#FF6900] tracking-tight">Xiaomi</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-[#F50514] hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-[#F50514] tracking-tight">OnePlus</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-black hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-black tracking-widest serif">SONY</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-[#C7000B] hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-[#C7000B] tracking-tight">Huawei</span>
-            </a>
-            <a className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-[#046A38] hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center" href="#">
-              <span className="text-2xl font-bold text-[#046A38] tracking-tight italic">OPPO</span>
-            </a>
+          <div 
+            ref={scrollRef}
+            className="flex overflow-x-auto gap-4 py-2 px-2 no-scrollbar snap-x snap-mandatory scroll-smooth"
+          >
+            {brands.map((brand, index) => (
+              <a key={index} className="min-w-[160px] h-[80px] bg-white rounded-lg border border-gray-200 hover:border-gray-400 hover:shadow-md transition-all duration-300 flex items-center justify-center shrink-0 snap-center p-6" href="#">
+                 <img src={brand.logo} alt={brand.name} className="max-h-full max-w-full object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" />
+              </a>
+            ))}
           </div>
         </div>
       </div>

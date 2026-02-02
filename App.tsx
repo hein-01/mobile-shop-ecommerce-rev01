@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import ServicesBar from './components/ServicesBar';
 import CategoryCarousel from './components/CategoryCarousel';
+import KillerDealSection from './components/KillerDealSection';
 import DealsSection from './components/DealsSection';
 import PromotionsSection from './components/PromotionsSection';
 import NewReleaseSection from './components/NewReleaseSection';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Hero />
         <ServicesBar />
         <CategoryCarousel />
+        <KillerDealSection />
         <DealsSection />
         <PromotionsSection />
         <NewReleaseSection />

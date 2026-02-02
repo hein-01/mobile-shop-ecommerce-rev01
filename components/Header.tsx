@@ -2,13 +2,13 @@ import React from 'react';
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 bg-[#224D44] border-b border-[#1A3D36] h-[72px] flex items-center shadow-md">
+    <header className="sticky top-0 z-50 bg-black border-b border-gray-800 h-[72px] flex items-center shadow-md">
       <div className="w-full px-4 lg:px-8 flex justify-center h-full">
         <div className="flex items-center justify-between w-full max-w-[1400px] h-full">
           {/* Logo Section */}
           <div className="flex items-center gap-2 shrink-0 cursor-pointer">
             <div className="leaf-logo"></div>
-            <span className="text-white text-3xl font-bold tracking-wide">AIS</span>
+            <span className="text-white text-3xl font-bold tracking-wide">AnyCall Mobile</span>
           </div>
 
           {/* Navigation Links (Desktop) */}
@@ -24,7 +24,7 @@ const Header: React.FC = () => {
               <div className="hidden group-hover:block absolute top-[72px] -left-20 w-[800px] bg-white shadow-2xl rounded-b-xl overflow-hidden z-[100] border-t-4 border-ais-green transform transition-all duration-200">
                 <div className="flex">
                   <div className="w-1/3 bg-gray-50 p-4 border-r border-gray-100 flex flex-col gap-1">
-                    <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-[#224D44] text-white shadow-md text-left transition-all">
+                    <button className="flex items-center justify-between w-full px-4 py-3 rounded-lg bg-black text-white shadow-md text-left transition-all">
                       <span className="font-bold">Smartphones</span>
                       <span className="material-symbols-outlined text-[20px]">chevron_right</span>
                     </button>
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                     </div>
                     {/* Promo Box within Menu */}
                     <div className="mt-auto relative rounded-lg overflow-hidden h-[120px] bg-[#1A3D36]">
-                      <div className="absolute inset-0 bg-gradient-to-r from-[#224D44] to-[#1A3D36]"></div>
+                      <div className="absolute inset-0 bg-gradient-to-r from-black to-gray-800"></div>
                       <div className="relative z-10 flex items-center justify-between p-5 h-full">
                         <div className="flex flex-col">
                           <span className="text-ais-green text-xs font-bold uppercase tracking-wider mb-1">New Arrivals</span>
@@ -117,7 +117,7 @@ const Header: React.FC = () => {
             </button>
             <button className="relative text-white hover:text-ais-green transition-colors">
               <span className="material-symbols-outlined !text-[28px]">shopping_bag</span>
-              <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-600 text-[10px] font-bold flex items-center justify-center rounded-full text-white border border-[#224D44]">0</span>
+              <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-600 text-[10px] font-bold flex items-center justify-center rounded-full text-white border border-black">0</span>
             </button>
             <button className="xl:hidden text-white ml-2">
               <span className="material-symbols-outlined !text-[32px]">menu</span>
