@@ -4,8 +4,8 @@ const featuredProduct = {
   bgGradient: "from-[#e8dee4] to-[#c7b9c2]",
   name: "Yoga Slim 7",
   specs: "(14\", 10)",
-  price: "K1,699",
-  srp: "K1,799"
+  price: "K1,699,000",
+  srp: "K1,799,000"
 };
 
 const newReleaseProducts = [
@@ -16,9 +16,9 @@ const newReleaseProducts = [
     specs: ["8/256GB"],
     colors: ["#D8BFD8", "#000000"],
     priceOld: null,
-    priceNew: "339",
+    priceNew: "339,000",
     badge: "Only 6 left!",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%283%29.png"
   },
   {
     brand: "ONEPLUS",
@@ -26,10 +26,10 @@ const newReleaseProducts = [
     warranty: "1.0 year",
     specs: ["8/256GB"],
     colors: ["#D2E796"],
-    priceOld: "K1,299.00",
-    priceNew: "1,099",
+    priceOld: "K1,299,000",
+    priceNew: "1,099,000",
     badge: "Only 7 left!",
-    image: "https://fdn.gsmarena.com/imgroot/reviews/23/oneplus-nord-ce-3-lite/review/assets/gsmarena_001.jpg"
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%282%29.png"
   },
   {
     brand: "SAMSUNG",
@@ -37,10 +37,10 @@ const newReleaseProducts = [
     warranty: "1.0 year",
     specs: ["6/128GB"],
     colors: ["#C0C0C0", "#000000"],
-    priceOld: "K398.00",
-    priceNew: "288",
+    priceOld: "K398,000",
+    priceNew: "288,000",
     badge: "Only 8 left!",
-    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29.png"
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%281%29.png"
   },
   {
     brand: "ONEPLUS",
@@ -48,8 +48,8 @@ const newReleaseProducts = [
     warranty: "2.0 years",
     specs: ["16/512GB"],
     colors: ["#32CD32"],
-    priceOld: "K1,099.00",
-    priceNew: "899",
+    priceOld: "K1,099,000",
+    priceNew: "899,000",
     badge: "New!",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
   },
@@ -59,8 +59,8 @@ const newReleaseProducts = [
     warranty: "1.0 year",
     specs: ["8/128GB"],
     colors: ["#E0E5C9", "#282C31"],
-    priceOld: "K799.00",
-    priceNew: "699",
+    priceOld: "K799,000",
+    priceNew: "699,000",
     badge: "Hot",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCKWiQap7soVdY8MD5gXg5_0knIpSYAsSlqebT8qPAO9Uz0n0nuBiEjAuvyQtIRAHm9kVXPRn4hQpPMbJYrTdqOpUqj1tl7JyhX05qk8rpIa8hMu3x-kKudLG5Z8WmhrL6OSA8YmaID70dZc_rpOLnQf0ARGd0XTQRd0PmJ_gv8ymgYuWoTPVKz7YAcU1XamPotZB3wB0KzdARaIF5uoO9Z9L9SzlVt9a7Jxm7DVhzuWYsfglf9iZ7_VXHihRvRE9rF7MBBkbSuyBs"
   },
@@ -70,8 +70,8 @@ const newReleaseProducts = [
     warranty: "1.0 year",
     specs: ["12/256GB"],
     colors: ["#000000"],
-    priceOld: "K1,399.00",
-    priceNew: "1,199",
+    priceOld: "K1,399,000",
+    priceNew: "1,199,000",
     badge: "",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAyqlsLaqAYmz2FdRqidBNy03GbCF8eGtSHcdoSLhj6J8qaEgX5kvXkVXhy8Iq7xYY-gvp7qVg9LnCzwxhDAIIqbLb02eyoqVULnTvFebAFTjWcWsXlYBSv3SGO_ZJ9RBXEawiNghwyyIAIZHbYWC-NRQrrYtCRSWB8MwQzf9uoP2mgS_K4KeFTjMuw2LQy-mQhw0v5J0K36XxujMaiSSIYuAemnlz50d0IxUtfFV3pCoqK8ZRwQzDoQb1vCidBHKZDa4yFFjqslgM"
   }
@@ -215,7 +215,6 @@ const NewReleaseSection: React.FC = () => {
                                 <span className="text-gray-400 text-[11px] font-bold line-through mr-1.5">{product.priceOld}</span>
                              )}
                             <span className="text-red-600 text-xl font-bold">K{product.priceNew}</span>
-                            <span className="text-red-600 text-xs font-bold ml-[1px]">.00</span>
                           </div>
                           <div className="flex gap-1.5 mb-2 w-full">
                             <div className="flex-1 flex items-center justify-center bg-stock-blue-bg border border-stock-blue-text/20 rounded-[6px] py-2 px-2 text-center">

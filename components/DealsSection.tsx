@@ -7,7 +7,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["8/256GB", "12/512GB"],
     colors: ["#F5F5DC", "#505459", "#2C3440"],
-    priceOld: "K1,099.00",
+    priceOld: "K1,099",
     priceNew: "999",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKxl_Kkheld-K45Km3r8tfV6yDOLDEBYyAfgwKk2dSA-IzFgDkXNy16v--s9Y7-3zThOy2_uPqQdxblLqeRtsWDtydCMiZsQLKMb20rsQAXZMtzqtYgx_uL_buPjyVY3ZEdtGFDgxS3I1TkMQezB6FgnavMpRUxHAoDPa_NK_wei2NPU1GwOINFb4tOEl0QKXgFVYC1Q5zxJdQiC2ipvX7Jh484b0jHPgS9XgPEn-QCBDUrKWTmlnoPS2-XfZJ42g1n_lxy0PrpZg"
   },
@@ -17,7 +17,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["12/256GB", "12/512GB"],
     colors: ["#E8E8E8", "#424242", "#FFD700"],
-    priceOld: "K1,299.00",
+    priceOld: "K1,299",
     priceNew: "1,199",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAyqlsLaqAYmz2FdRqidBNy03GbCF8eGtSHcdoSLhj6J8qaEgX5kvXkVXhy8Iq7xYY-gvp7qVg9LnCzwxhDAIIqbLb02eyoqVULnTvFebAFTjWcWsXlYBSv3SGO_ZJ9RBXEawiNghwyyIAIZHbYWC-NRQrrYtCRSWB8MwQzf9uoP2mgS_K4KeFTjMuw2LQy-mQhw0v5J0K36XxujMaiSSIYuAemnlz50d0IxUtfFV3pCoqK8ZRwQzDoQb1vCidBHKZDa4yFFjqslgM"
   },
@@ -27,7 +27,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["8/128GB", "8/256GB"],
     colors: ["#E0E5C9", "#F6E6D9", "#282C31"],
-    priceOld: "K799.00",
+    priceOld: "K799",
     priceNew: "699",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCKWiQap7soVdY8MD5gXg5_0knIpSYAsSlqebT8qPAO9Uz0n0nuBiEjAuvyQtIRAHm9kVXPRn4hQpPMbJYrTdqOpUqj1tl7JyhX05qk8rpIa8hMu3x-kKudLG5Z8WmhrL6OSA8YmaID70dZc_rpOLnQf0ARGd0XTQRd0PmJ_gv8ymgYuWoTPVKz7YAcU1XamPotZB3wB0KzdARaIF5uoO9Z9L9SzlVt9a7Jxm7DVhzuWYsfglf9iZ7_VXHihRvRE9rF7MBBkbSuyBs"
   },
@@ -37,7 +37,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["12/256GB", "16/512GB"],
     colors: ["#32CD32", "#000000"],
-    priceOld: "K899.00",
+    priceOld: "K899",
     priceNew: "799",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
   },
@@ -47,7 +47,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["8/256GB", "12/512GB"],
     colors: ["#F5F5DC", "#505459", "#2C3440"],
-    priceOld: "K1,099.00",
+    priceOld: "K1,099",
     priceNew: "999",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKxl_Kkheld-K45Km3r8tfV6yDOLDEBYyAfgwKk2dSA-IzFgDkXNy16v--s9Y7-3zThOy2_uPqQdxblLqeRtsWDtydCMiZsQLKMb20rsQAXZMtzqtYgx_uL_buPjyVY3ZEdtGFDgxS3I1TkMQezB6FgnavMpRUxHAoDPa_NK_wei2NPU1GwOINFb4tOEl0QKXgFVYC1Q5zxJdQiC2ipvX7Jh484b0jHPgS9XgPEn-QCBDUrKWTmlnoPS2-XfZJ42g1n_lxy0PrpZg"
   },
@@ -57,7 +57,7 @@ const products = [
     warranty: "2.0 years",
     specs: ["12/512GB", "16/1TB"],
     colors: ["#000000", "#32CD32", "#87CEEB"],
-    priceOld: "K899.00",
+    priceOld: "K899",
     priceNew: "799",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
   },
@@ -67,7 +67,7 @@ const products = [
     warranty: "1.0 year",
     specs: ["12/256GB", "12/512GB"],
     colors: ["#E0E5C9", "#F6E6D9"],
-    priceOld: "K599.00",
+    priceOld: "K599",
     priceNew: "549",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
   }
@@ -139,7 +139,6 @@ const DealsSection: React.FC = () => {
                       <div className="flex items-baseline mb-2">
                         <span className="text-gray-400 text-[11px] font-bold line-through mr-1.5">{product.priceOld}</span>
                         <span className="text-red-600 text-xl font-bold">K{product.priceNew}</span>
-                        <span className="text-red-600 text-xs font-bold ml-[1px]">.00</span>
                       </div>
                       <div className="flex gap-1.5 mb-2 w-full">
                         <div className="flex-1 flex items-center justify-center bg-stock-blue-bg border border-stock-blue-text/20 rounded-[6px] py-2 px-2 text-center">

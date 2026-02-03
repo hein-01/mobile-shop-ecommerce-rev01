@@ -7,8 +7,8 @@ const products = [
     warranty: "1.0 year",
     specs: ["8/256GB"],
     colors: ["#000000", "#32CD32"],
-    priceOld: "K599.00",
-    priceNew: "499",
+    priceOld: "K599,000",
+    priceNew: "499,000",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
   },
   {
@@ -17,9 +17,9 @@ const products = [
     warranty: "1.0 year",
     specs: ["4/64GB"],
     colors: ["#C0C0C0", "#000000"],
-    priceOld: "K799.00",
-    priceNew: "650",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
+    priceOld: "K799,000",
+    priceNew: "650,000",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%283%29.png"
   },
   {
     brand: "APPLE",
@@ -27,8 +27,8 @@ const products = [
     warranty: "1.0 year",
     specs: ["64GB"],
     colors: ["#E0E5C9", "#282C31"],
-    priceOld: "K1,899.00",
-    priceNew: "1,750",
+    priceOld: "K1,899,000",
+    priceNew: "1,750,000",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAyqlsLaqAYmz2FdRqidBNy03GbCF8eGtSHcdoSLhj6J8qaEgX5kvXkVXhy8Iq7xYY-gvp7qVg9LnCzwxhDAIIqbLb02eyoqVULnTvFebAFTjWcWsXlYBSv3SGO_ZJ9RBXEawiNghwyyIAIZHbYWC-NRQrrYtCRSWB8MwQzf9uoP2mgS_K4KeFTjMuw2LQy-mQhw0v5J0K36XxujMaiSSIYuAemnlz50d0IxUtfFV3pCoqK8ZRwQzDoQb1vCidBHKZDa4yFFjqslgM"
   },
   {
@@ -37,9 +37,9 @@ const products = [
     warranty: "1.0 year",
     specs: ["4/64GB"],
     colors: ["#C0C0C0"],
-    priceOld: "K699.00",
-    priceNew: "599",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
+    priceOld: "K699,000",
+    priceNew: "599,000",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%283%29.png"
   },
   {
     brand: "VIVO",
@@ -47,8 +47,8 @@ const products = [
     warranty: "1.0 year",
     specs: ["8/256GB"],
     colors: ["#32CD32", "#87CEEB"],
-    priceOld: "K899.00",
-    priceNew: "799",
+    priceOld: "K899,000",
+    priceNew: "799,000",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw"
   },
   {
@@ -57,8 +57,8 @@ const products = [
     warranty: "1.0 year",
     specs: ["8/128GB"],
     colors: ["#32CD32", "#000000"],
-    priceOld: "K1,299.00",
-    priceNew: "1,099",
+    priceOld: "K1,299,000",
+    priceNew: "1,099,000",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAyqlsLaqAYmz2FdRqidBNy03GbCF8eGtSHcdoSLhj6J8qaEgX5kvXkVXhy8Iq7xYY-gvp7qVg9LnCzwxhDAIIqbLb02eyoqVULnTvFebAFTjWcWsXlYBSv3SGO_ZJ9RBXEawiNghwyyIAIZHbYWC-NRQrrYtCRSWB8MwQzf9uoP2mgS_K4KeFTjMuw2LQy-mQhw0v5J0K36XxujMaiSSIYuAemnlz50d0IxUtfFV3pCoqK8ZRwQzDoQb1vCidBHKZDa4yFFjqslgM"
   }
 ];
@@ -155,7 +155,6 @@ const SmartphonesTabletsSection: React.FC = () => {
                               <span className="text-gray-400 text-[11px] font-bold line-through mr-1.5">{product.priceOld}</span>
                            )}
                           <span className="text-red-600 text-xl font-bold">K{product.priceNew}</span>
-                          <span className="text-red-600 text-xs font-bold ml-[1px]">.00</span>
                         </div>
                         <div className="flex gap-1.5 mb-2 w-full">
                           <div className="flex-1 flex items-center justify-center bg-stock-blue-bg border border-stock-blue-text/20 rounded-[6px] py-2 px-2 text-center">
