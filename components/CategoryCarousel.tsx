@@ -5,7 +5,7 @@ const categories = [
     name: "SMARTPHONE",
     tag: "Starts from",
     price: "K299",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA",
+    image: "https://raw.githubusercontent.com/hein-01/mysvgs/f2043946e9a3c3666e8e9891d5fa368d1790fb0a/phone.png",
     bgColor: "bg-gradient-to-br from-[#f8f9fa] to-[#ced4da]", // Distinct Grey
     borderColor: "border-gray-300",
   },

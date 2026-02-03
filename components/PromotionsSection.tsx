@@ -91,7 +91,7 @@ const PromotionsSection: React.FC = () => {
                   <img
                     alt="JBL Earbuds"
                     className="w-40 relative z-10 transform group-hover:rotate-6 transition-transform duration-500 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnP7Il62zSLrYwzO5B-fwrpMA3o8KckvPSqtgHODL6nB9rnA-KF9jed41wezVR1hlFznCxTUCbVfwNCX80Dq9FwoeWzrsMCv4JoFiQ5ns_zHNcB8rXatuHtFfszuP2PTrtvqI2qnKj_vVRJilqIG2g6xK30uzAvYBfb1j4lSJJds2OCOexgHoyRGozUs0g3y--KOfJ5eNMG_bIJbDASodXE5hBnPxqSxxiblg2S02yvoAfkkXQwThsu4lmEF6yrZ1DMS0ZSYbQbUc"
+                    src="https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2817%29.svg"
                   />
                 </div>
                 <div className="mt-auto">
