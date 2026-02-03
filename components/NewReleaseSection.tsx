@@ -40,15 +40,15 @@ const newReleaseProducts = [
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
   },
   {
-    brand: "LENOVO",
-    name: "[Online Exclusive] Lenovo ThinkPad X9...",
-    warranty: "2.0 years",
-    specs: ["16/512GB"],
-    colors: ["#000000"],
-    priceOld: "K3,399.00",
-    priceNew: "2,399",
+    brand: "ONEPLUS",
+    name: "OnePlus Nord CE 3 Lite 5G Pastel Lime",
+    warranty: "1.0 year",
+    specs: ["8/256GB"],
+    colors: ["#D2E796"],
+    priceOld: "K1,299.00",
+    priceNew: "1,099",
     badge: "Only 7 left!",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzWyNdrPgsNl3RzxSvdGdxKLvgzZLpX0mLlPkFqmqf2BJmK5Us6-ff8gl6wzZtJo86iDyURuhaq5WB6VqzRmw3E65MfKPlk2Kkh5w7lpm-12DEs44vtsj4D-a_K7dYjfndNEyQkFhatN5HAzcANY9pZu4D5dpMLTVzYIi1ol60Ug-yg6cabB6PjSJLVaYVCpOmtWHis5R78lLXHIohxahWIGk8dvU10uerLmSxRCtEJEQDoelKpiYhKZ2g_n3JfCpbOonT5aqmi6M"
+    image: "https://fdn.gsmarena.com/imgroot/reviews/23/oneplus-nord-ce-3-lite/lifestyle/-1200w2/gsmarena_001.jpg"
   },
   {
     brand: "SAMSUNG",

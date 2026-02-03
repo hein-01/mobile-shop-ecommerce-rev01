@@ -40,7 +40,7 @@ const KillerDealSection: React.FC = () => {
              {/* Image */}
              <div className="w-full md:w-[45%] flex items-center justify-center p-2 mb-4 md:mb-0">
                 <img 
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA" 
+                    src="https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2814%29.svg" 
                     alt="iPad" 
                     className="max-h-[200px] lg:max-h-[240px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
                 />

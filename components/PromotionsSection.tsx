@@ -142,7 +142,7 @@ const PromotionsSection: React.FC = () => {
                   <img
                     alt="Asus Laptop"
                     className="w-48 transform group-hover:scale-105 transition-transform duration-500 drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWyNdrPgsNl3RzxSvdGdxKLvgzZLpX0mLlPkFqmqf2BJmK5Us6-ff8gl6wzZtJo86iDyURuhaq5WB6VqzRmw3E65MfKPlk2Kkh5w7lpm-12DEs44vtsj4D-a_K7dYjfndNEyQkFhatN5HAzcANY9pZu4D5dpMLTVzYIi1ol60Ug-yg6cabB6PjSJLVaYVCpOmtWHis5R78lLXHIohxahWIGk8dvU10uerLmSxRCtEJEQDoelKpiYhKZ2g_n3JfCpbOonT5aqmi6M"
+                    src="https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2811%29.svg"
                   />
                 </div>
                 <div className="mt-auto flex justify-between items-end border-t border-blue-800/50 pt-3">

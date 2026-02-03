@@ -53,7 +53,7 @@ const categories = [
     name: "SMART HOME",
     tag: "Starts from",
     price: "K89",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB1Lt5-dNpllp0Dl-dc_pCr4LJwVdx_4sHhnGQuWChPK1rsKbQmWjWS1h2bkBFadrAmpC8qtAEH_tv90rZ4ZEytOyssJRYD7ZCTy2xg0ghZQaMM7QHQl40NFIAuX2wEpyhyF_RDLWe5SoFb6Xs_P1FiwO1mROBBhfEbz51SEVhoGgr6q_3GcWKGaKs4llRfObNSJJOZNaa-R5OzULVIqspkpLK5TIKMRHjlFBSv2IVXjDfYLyID8Dw_Iob4a5liTLN_lpwFYw969hI",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2810%29.svg",
     bgColor: "bg-gradient-to-br from-[#c8e6c9] to-[#81c784]", // Green
     borderColor: "border-green-200",
   },
