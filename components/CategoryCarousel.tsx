@@ -21,7 +21,7 @@ const categories = [
     name: "POWER BANK",
     tag: "Starts from",
     price: "K49",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjSEOlL-150naiGeoD0910o2M0VbL74oA4LnRfdIO8Dsm-JlE3IVgd5utEwyM-Z0NxtGyqe0szz6AE_hciVi5ZX2WislVuTIloRGK-j0eBXtcuC2FcIfjgNuAMembt1AlOsMQVnZ9IoZ-PDCommGQKnKzuc-fNW_e-ffptESVELcWNViVGnQOUPhQe2PpW3Q_pDxHf03aR9hsC6mhJ-zOAUPfzw5FpG-tFU2y_xuwHXt5dIOFjw7f8_LVPI99q8MlBnKHTdfNLZwI",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%284%29.svg",
     bgColor: "bg-gradient-to-br from-[#ffccbc] to-[#ffab91]", // Rose/Orange
     borderColor: "border-orange-200",
   },
@@ -29,7 +29,7 @@ const categories = [
     name: "LAPTOPS",
     tag: "Starts from",
     price: "K199",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB1Lt5-dNpllp0Dl-dc_pCr4LJwVdx_4sHhnGQuWChPK1rsKbQmWjWS1h2bkBFadrAmpC8qtAEH_tv90rZ4ZEytOyssJRYD7ZCTy2xg0ghZQaMM7QHQl40NFIAuX2wEpyhyF_RDLWe5SoFb6Xs_P1FiwO1mROBBhfEbz51SEVhoGgr6q_3GcWKGaKs4llRfObNSJJOZNaa-R5OzULVIqspkpLK5TIKMRHjlFBSv2IVXjDfYLyID8Dw_Iob4a5liTLN_lpwFYw969hI",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%285%29.svg",
     bgColor: "bg-gradient-to-br from-[#ffe0b2] to-[#ffb74d]", // Gold/Amber
     borderColor: "border-amber-200",
   },
@@ -37,7 +37,7 @@ const categories = [
     name: "CHARGERS",
     tag: "Starts from",
     price: "K249",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDTUvOMed3_er_3M8Bc6O0th1sjKAUKezbvfHBGrwkVj6J8UjiCaJFBm4jmLpl5NcBTUnW0Ml2CVJYqIS5od7Kao-7vTt3LAXBrY6AyiX-ExojUI0OHZDlrrtm876DKbXg9cSSZVvBkNU61b4pQdKf-Al4LsqHgwZMIfigBsptG_nR2bPnniTAIBFzMmD-99nkj-mcamSRpnBTPWt1YAjhU6hoEjI5hMjwtxrjhLDXgut3jKsz5g9CA0_0zTcY2-9jrE2l_7zMl0Pw",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%286%29.svg",
     bgColor: "bg-gradient-to-br from-[#e1bee7] to-[#ba68c8]", // Purple
     borderColor: "border-purple-200",
   },
@@ -45,7 +45,7 @@ const categories = [
     name: "AUDIO",
     tag: "Starts from",
     price: "K349",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%287%29.svg",
     bgColor: "bg-gradient-to-br from-[#cfd8dc] to-[#90a4ae]", // Blue Grey
     borderColor: "border-slate-300",
   },
