@@ -61,7 +61,7 @@ const PromotionsSection: React.FC = () => {
                   <img
                     alt="Lenovo Laptop"
                     className="w-full h-full object-contain drop-shadow-xl transform scale-125"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzWyNdrPgsNl3RzxSvdGdxKLvgzZLpX0mLlPkFqmqf2BJmK5Us6-ff8gl6wzZtJo86iDyURuhaq5WB6VqzRmw3E65MfKPlk2Kkh5w7lpm-12DEs44vtsj4D-a_K7dYjfndNEyQkFhatN5HAzcANY9pZu4D5dpMLTVzYIi1ol60Ug-yg6cabB6PjSJLVaYVCpOmtWHis5R78lLXHIohxahWIGk8dvU10uerLmSxRCtEJEQDoelKpiYhKZ2g_n3JfCpbOonT5aqmi6M"
+                    src="https://raw.githubusercontent.com/hein-01/mysvgs/main/123%20(1).svg"
                   />
                 </div>
                 <div className="text-center">

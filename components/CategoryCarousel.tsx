@@ -5,7 +5,7 @@ const categories = [
     name: "SMARTPHONE",
     tag: "Starts from",
     price: "K299",
-    image: "https://raw.githubusercontent.com/hein-01/mysvgs/f2043946e9a3c3666e8e9891d5fa368d1790fb0a/phone.png",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%282%29.svg",
     bgColor: "bg-gradient-to-br from-[#f8f9fa] to-[#ced4da]", // Distinct Grey
     borderColor: "border-gray-300",
   },
@@ -13,7 +13,7 @@ const categories = [
     name: "TABLETS",
     tag: "Starts from",
     price: "K564",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB5iUeUQ0qYJ9jz3MsggR39ekHCKww5hS2qWzcCdl3tN-g47In1ueAyc6pF2Mrt0XjgEDMxXtETgeyrxwBipUtvnlv4SsxKh6ag4VTWNP6FCVq5LtoGw45FvYQ4FyF5KEy7ttjcDFq9bZGOEynd0loitj-i6IOvS1OJ2JYdeTY_-TICXxxfZ9QlPZ3QoN-z44xWPn0X2t04oySKoka21_rU9g04yT9e_3EX75T5AlzCPnRmOk3Lt_gf2on3PG9a4CJ5pWkCyWI0YpE",
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%283%29.svg",
     bgColor: "bg-gradient-to-br from-[#e0f7fa] to-[#80deea]", // Cyan/Blue
     borderColor: "border-cyan-200",
   },

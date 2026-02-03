@@ -55,6 +55,15 @@ const Hero: React.FC = () => {
         {/* Left Side: Campaign Text & Graphics */}
         <div className="flex flex-col items-center lg:items-end relative lg:w-1/2 text-center lg:text-right">
             
+            {/* Requested Background Image - Resized Smaller & Moved Right */}
+            <div className="absolute top-1/2 left-0 -translate-y-1/2 translate-x-6 lg:translate-x-4 w-[200px] lg:w-[300px] h-[200px] lg:h-[300px] opacity-40 lg:opacity-60 pointer-events-none z-0">
+                <img 
+                    src="https://raw.githubusercontent.com/hein-01/mysvgs/main/TechDance%20%2880%20x%2080%20px%29%20%2819%29.svg" 
+                    alt="" 
+                    className="w-full h-full object-contain"
+                />
+            </div>
+
             {/* 2.2 Text */}
             <div className="absolute -top-16 -left-10 lg:-left-20 text-white/10 font-black text-[180px] leading-none select-none z-0">2.2</div>
             <h2 className="relative z-10 text-white text-6xl lg:text-7xl font-black italic tracking-tighter drop-shadow-[0_0_15px_rgba(255,255,255,0.6)] mb-4 transform -rotate-6">
