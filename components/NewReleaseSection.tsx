@@ -40,8 +40,7 @@ const newReleaseProducts = [
     priceOld: "K398.00",
     priceNew: "288",
     badge: "Only 8 left!",
-    extraBadge: "VC Cashback: K5.76",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDN4xmdamghD4U13saHCkNLlAVQKP3L2s9TlcBrN7mvLebP10Eh_VgKqNpnn3d_R4RBbsZsLyOnTv3m9grXPj3I65V53NyYfOQQWrYjzMev_AZ-IwJxrxQJxsxx_9I_fLNhtcZZbEXIsATCcdeKtePn5F87NZrzpT7t4b9Fb1SZNJ9SVCWAX78u6jwB0tey1L3et0LYoocxqKbAJJXRMvZLogrbaFh43P0WNPDTpAgFnbr6aibWJ50qAInprOXtWYwJtYDngZu3JuA"
+    image: "https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29.png"
   },
   {
     brand: "ONEPLUS",

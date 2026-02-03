@@ -99,7 +99,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* Other Nav Links */}
-            {["Audio", "Tablet", "Wearables", "Home Appliances", "Laptops", "TV/Entertainment", "Support"].map((item) => (
+            {["Audio", "Tablet", "Wearables", "Laptops", "Smart Home"].map((item) => (
               <a
                 key={item}
                 className="h-full flex items-center hover:text-ais-green transition-colors border-b-4 border-transparent hover:border-ais-green px-1"
@@ -119,8 +119,7 @@ const Header: React.FC = () => {
                     <span className="text-[13px] font-bold tracking-wide">Find a Store</span>
                 </a>
                 <a href="#" className="flex items-center gap-2 text-white hover:text-ais-green transition-colors group">
-                    <span className="material-symbols-outlined text-[20px] text-gray-400 group-hover:text-ais-green transition-colors">person</span>
-                    <span className="text-[13px] font-bold tracking-wide">Login / Register</span>
+                    <span className="text-[13px] font-bold tracking-wide">Login</span>
                 </a>
             </div>
 
