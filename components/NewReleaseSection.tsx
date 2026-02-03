@@ -213,7 +213,7 @@ const NewReleaseSection: React.FC = () => {
                     <div className="flex flex-col h-full w-full bg-white rounded-[18px] overflow-hidden relative">
                       
                       {/* Image Area */}
-                      <div className="relative w-full h-[220px] bg-gray-50 flex items-center justify-center p-6">
+                      <div className="relative w-full h-[220px] bg-gray-50 flex items-center justify-center p-0">
                         {product.badge && (
                           <span className="absolute top-4 left-4 z-10 bg-[#ffd1dc] text-[#592e36] text-[10px] font-bold px-2 py-1 rounded-md">{product.badge}</span>
                         )}
@@ -221,7 +221,7 @@ const NewReleaseSection: React.FC = () => {
                           <span className="material-symbols-outlined drop-shadow-md">favorite_border</span>
                         </button>
                         <div
-                          className="w-full h-full bg-center bg-contain bg-no-repeat transform group-hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full bg-center bg-cover bg-no-repeat transform group-hover:scale-105 transition-transform duration-500"
                           style={{ backgroundImage: `url("${product.image}")` }}
                         ></div>
                       </div>
