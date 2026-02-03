@@ -2,15 +2,15 @@ import React from 'react';
 
 const ServicesBar: React.FC = () => {
   return (
-    <section className="w-full bg-white border-b border-gray-200 py-6">
+    <section className="w-full bg-white border-b border-gray-200 pt-20 pb-6">
       <div className="max-w-[1200px] mx-auto px-4 flex flex-col items-center gap-4">
         
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-lg md:text-2xl font-bold text-center text-gray-800 tracking-tight">
-            Price and inventory being updated in <span className="inline-block bg-purple-50 px-2 py-1 rounded-lg border border-purple-100"><span className="bg-gradient-to-r from-primary via-pink-500 to-primary bg-[length:200%_auto] animate-gradient-x bg-clip-text text-transparent font-extrabold">real time</span></span>. We accept these payments.
+        <div className="flex flex-col items-center gap-0">
+          <h2 className="text-base md:text-xl font-medium text-center text-gray-800 tracking-tight">
+            Price and inventory being updated in <span className="bg-gradient-to-r from-primary via-pink-500 to-primary bg-[length:200%_auto] animate-gradient-x bg-clip-text text-transparent font-extrabold">real time</span>. We accept these payments.
           </h2>
-          <p className="text-sm text-gray-500 text-center font-medium opacity-90">
-            စျေးနှုန်းနှင့်လက်ကျန်အရေအတွက်များသည် အပြင်ဆိုင်များအတိုင်း အချိန်ကိုက်တူညီစွာပြောင်းလဲနေပြီးဖြစ်၍ စိတ်ချစွာဝယ်ယူနိုင်သည်။
+          <p className="text-sm md:text-base text-gray-600 text-center font-medium opacity-100">
+            စျေးနှုန်းနှင့်လက်ကျန်အရေအတွက်များသည် အပြင်ဆိုင်ခွဲများအားလုံးအတိုင်း အချိန်ကိုက်တူညီစွာပြောင်းလဲနေပြီးဖြစ်၍ စိတ်ချစွာဝယ်ယူနိုင်ပါသည်
           </p>
         </div>
 

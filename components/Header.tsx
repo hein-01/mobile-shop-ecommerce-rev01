@@ -8,7 +8,7 @@ const Header: React.FC = () => {
           {/* Logo Section */}
           <div className="flex items-center gap-2 shrink-0 cursor-pointer">
             <div className="leaf-logo"></div>
-            <span className="text-white text-3xl font-bold tracking-wide">AnyCall Mobile</span>
+            <span className="text-white text-3xl font-bold tracking-wide">AnyCall</span>
           </div>
 
           {/* Navigation Links (Desktop) */}
@@ -112,9 +112,6 @@ const Header: React.FC = () => {
 
           {/* Action Icons */}
           <div className="flex items-center gap-4 shrink-0">
-            <button className="text-white hover:text-ais-green transition-colors">
-              <span className="material-symbols-outlined !text-[28px]">search</span>
-            </button>
             <button className="relative text-white hover:text-ais-green transition-colors">
               <span className="material-symbols-outlined !text-[28px]">shopping_bag</span>
               <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-600 text-[10px] font-bold flex items-center justify-center rounded-full text-white border border-black">0</span>

@@ -17,7 +17,7 @@ const offers = [
     customContent: (
       <div className="flex flex-col justify-center h-full">
          <span className="text-[#111318] font-bold text-[15px] leading-tight">20 Branches all over country</span>
-         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Store Locator →</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline uppercase tracking-wide">Store Locator →</span>
       </div>
     ),
     text: "",
@@ -36,7 +36,7 @@ const offers = [
     customContent: (
       <div className="flex flex-col justify-center h-full">
          <span className="text-[#111318] font-bold text-[15px] leading-tight">Aeon/ AYA/ CB Installments</span>
-         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Loan Calculator →</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline uppercase tracking-wide">Loan Calculator →</span>
       </div>
     ),
     text: "",
@@ -60,7 +60,7 @@ const offers = [
     customContent: (
       <div className="flex flex-col justify-center h-full">
          <span className="text-[#111318] font-bold text-[15px] leading-tight">Free delivery for orders above 7000 K</span>
-         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Track Order →</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline uppercase tracking-wide">Track Order →</span>
       </div>
     ),
     text: "",
@@ -82,7 +82,7 @@ const offers = [
     customContent: (
       <div className="flex flex-col justify-center h-full">
          <span className="text-[#111318] font-bold text-[15px] leading-tight">Hotline No: 09751234567</span>
-         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">Call Now →</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline uppercase tracking-wide">Call Now →</span>
       </div>
     ),
     text: "",
@@ -98,7 +98,7 @@ const offers = [
     customContent: (
       <div className="flex flex-col justify-center h-full">
          <span className="text-[#111318] font-bold text-[15px] leading-tight">Delivery, Orders and Returns, Payment Information</span>
-         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline">See All FAQs →</span>
+         <span className="text-blue-600 font-bold text-sm mt-1 cursor-pointer hover:underline uppercase tracking-wide">See All FAQs →</span>
       </div>
     ),
     text: "",

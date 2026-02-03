@@ -8,6 +8,7 @@ import DealsSection from './components/DealsSection';
 import PromotionsSection from './components/PromotionsSection';
 import NewReleaseSection from './components/NewReleaseSection';
 import ForYouSection from './components/ForYouSection';
+import SmartphonesTabletsSection from './components/SmartphonesTabletsSection';
 import BrandSection from './components/BrandSection';
 import AppDownloadSection from './components/AppDownloadSection';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ const App: React.FC = () => {
         <PromotionsSection />
         <NewReleaseSection />
         <ForYouSection />
+        <SmartphonesTabletsSection />
         <BrandSection />
         <AppDownloadSection />
       </main>

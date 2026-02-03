@@ -20,7 +20,7 @@ const KillerDealSection: React.FC = () => {
                 <div className="text-5xl lg:text-6xl font-black tracking-tighter leading-none mb-1">KILLER</div>
                 <div className="text-5xl lg:text-6xl font-black tracking-tighter leading-none mb-6">DEAL</div>
                 
-                <p className="text-sm font-medium opacity-80 mt-auto">1 ก.พ. 69 - 4 ก.พ. 69</p>
+                <p className="text-sm font-medium opacity-80 mt-auto">1 Feb 26 - 4 Feb 26</p>
              </div>
 
              {/* Navigation Left */}
@@ -34,7 +34,7 @@ const KillerDealSection: React.FC = () => {
              
              {/* Installment Badge */}
              <div className="absolute bottom-4 left-4 z-10 bg-gray-100 px-3 py-1.5 rounded-lg flex items-center gap-1 border border-gray-200">
-                <span className="text-xs text-gray-600 font-bold">ผ่อน 0%*</span>
+                <span className="text-xs text-gray-600 font-bold">0% Installment*</span>
              </div>
 
              {/* Image */}
@@ -52,15 +52,15 @@ const KillerDealSection: React.FC = () => {
                     <span className="material-symbols-outlined text-xl font-bold">apple</span>
                     <span className="font-bold text-xl tracking-tight">iPad</span>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-1 tracking-tight">ดีลพิเศษที่ทำได้มากกว่า</h3>
-                <p className="text-sm text-gray-500 mb-6 font-medium">iPad รุ่น 10.9 นิ้ว (Wi-Fi)</p>
+                <h3 className="text-2xl font-bold text-gray-900 mb-1 tracking-tight">Special deals that do more</h3>
+                <p className="text-sm text-gray-500 mb-6 font-medium">iPad 10.9-inch (Wi-Fi)</p>
 
                 <div className="flex gap-6 w-full justify-center md:justify-start">
                     {/* Option 1 */}
                     <div className="flex flex-col items-center md:items-start">
-                        <div className="border border-gray-300 rounded px-2 py-0.5 text-[10px] text-gray-500 w-fit mb-1 bg-white">ความจุ 64 GB</div>
-                        <div className="text-[#D32F2F] font-bold text-3xl tracking-tight">฿11,000</div>
-                        <div className="text-gray-400 text-xs line-through">฿12,900</div>
+                        <div className="border border-gray-300 rounded px-2 py-0.5 text-[10px] text-gray-500 w-fit mb-1 bg-white">64 GB</div>
+                        <div className="text-[#D32F2F] font-bold text-3xl tracking-tight">K 1,100,000</div>
+                        <div className="text-gray-400 text-xs line-through">K 1,290,000</div>
                     </div>
                     
                     {/* Divider */}
@@ -68,13 +68,13 @@ const KillerDealSection: React.FC = () => {
 
                     {/* Option 2 */}
                     <div className="flex flex-col items-center md:items-start">
-                        <div className="border border-gray-300 rounded px-2 py-0.5 text-[10px] text-gray-500 w-fit mb-1 bg-white">ความจุ 256 GB</div>
-                        <div className="text-[#D32F2F] font-bold text-3xl tracking-tight">฿15,000</div>
-                        <div className="text-gray-400 text-xs line-through">฿16,900</div>
+                        <div className="border border-gray-300 rounded px-2 py-0.5 text-[10px] text-gray-500 w-fit mb-1 bg-white">256 GB</div>
+                        <div className="text-[#D32F2F] font-bold text-3xl tracking-tight">K 1,500,000</div>
+                        <div className="text-gray-400 text-xs line-through">K 1,690,000</div>
                     </div>
                 </div>
 
-                <a href="#" className="mt-6 md:self-end text-black font-bold border-b-2 border-black text-sm hover:text-[#8B5CF6] hover:border-[#8B5CF6] transition-colors pb-0.5">ช้อปเลย</a>
+                <a href="#" className="mt-6 md:self-end text-black font-bold border-b-2 border-black text-sm hover:text-[#8B5CF6] hover:border-[#8B5CF6] transition-colors pb-0.5">Shop Now</a>
              </div>
 
              {/* Navigation Right */}
