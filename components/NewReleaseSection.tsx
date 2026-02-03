@@ -1,31 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef } from 'react';
 
-const slides = [
-  {
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKAGRe29d2-dfATxZdEIL9Kj1jty2JYBEtqOk_-FxOzsPF7nmMNaNj4IIhNXXNTFoT-8YTN3Tn4AALbGMh_dOSkQgMWSDYI-VqhIbk5y-Km9_guamR9l779C9P7hnttNlKu-jdyNpKfv6Uhs8nTYBvQWqqNutI3Dl-aIrTMDk3VbViSgjlgNzEp-Z72CrtLOpdMfrnrSiyrNOQ4pi3WzMmVkAadp_j83cHK1hMcWt5AxkyvKRCGCwEc_DcWIDZHZ2g1H4V7Ey9lOM",
-    bgGradient: "from-[#e8dee4] to-[#c7b9c2]",
-    name: "Yoga Slim 7",
-    specs: "(14\", 10)",
-    price: "K1,699",
-    srp: "K1,799"
-  },
-  {
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCzWyNdrPgsNl3RzxSvdGdxKLvgzZLpX0mLlPkFqmqf2BJmK5Us6-ff8gl6wzZtJo86iDyURuhaq5WB6VqzRmw3E65MfKPlk2Kkh5w7lpm-12DEs44vtsj4D-a_K7dYjfndNEyQkFhatN5HAzcANY9pZu4D5dpMLTVzYIi1ol60Ug-yg6cabB6PjSJLVaYVCpOmtWHis5R78lLXHIohxahWIGk8dvU10uerLmSxRCtEJEQDoelKpiYhKZ2g_n3JfCpbOonT5aqmi6M",
-    bgGradient: "from-[#e0e7eb] to-[#d1d5db]",
-    name: "ThinkPad X1",
-    specs: "(13\", Gen 2)",
-    price: "K2,199",
-    srp: "K2,499"
-  },
-  {
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBKAGRe29d2-dfATxZdEIL9Kj1jty2JYBEtqOk_-FxOzsPF7nmMNaNj4IIhNXXNTFoT-8YTN3Tn4AALbGMh_dOSkQgMWSDYI-VqhIbk5y-Km9_guamR9l779C9P7hnttNlKu-jdyNpKfv6Uhs8nTYBvQWqqNutI3Dl-aIrTMDk3VbViSgjlgNzEp-Z72CrtLOpdMfrnrSiyrNOQ4pi3WzMmVkAadp_j83cHK1hMcWt5AxkyvKRCGCwEc_DcWIDZHZ2g1H4V7Ey9lOM",
-    bgGradient: "from-[#dbeafe] to-[#bfdbfe]",
-    name: "Yoga Pro 9i",
-    specs: "(16\", Ultra)",
-    price: "K1,899",
-    srp: "K2,099"
-  }
-];
+const featuredProduct = {
+  bgGradient: "from-[#e8dee4] to-[#c7b9c2]",
+  name: "Yoga Slim 7",
+  specs: "(14\", 10)",
+  price: "K1,699",
+  srp: "K1,799"
+};
 
 const newReleaseProducts = [
   {
@@ -48,7 +29,7 @@ const newReleaseProducts = [
     priceOld: "K1,299.00",
     priceNew: "1,099",
     badge: "Only 7 left!",
-    image: "https://fdn.gsmarena.com/imgroot/reviews/23/oneplus-nord-ce-3-lite/lifestyle/-1200w2/gsmarena_001.jpg"
+    image: "https://fdn.gsmarena.com/imgroot/reviews/23/oneplus-nord-ce-3-lite/review/assets/gsmarena_001.jpg"
   },
   {
     brand: "SAMSUNG",
@@ -99,15 +80,6 @@ const newReleaseProducts = [
 
 const NewReleaseSection: React.FC = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSlideIndex((prev) => (prev + 1) % slides.length);
-    }, 4000); // Change image every 4 seconds
-
-    return () => clearInterval(interval);
-  }, []);
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -129,13 +101,10 @@ const NewReleaseSection: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-6 px-4 pb-4">
           {/* Fixed Feature Card: Lenovo YOGA with Dynamic Background */}
           <div className="shrink-0 w-full md:w-[250px] lg:w-[400px] h-[480px] rounded-[24px] overflow-hidden shadow-lg relative bg-[#dcd0d8] group cursor-pointer transition-colors duration-700">
-            {/* Animated Backgrounds */}
-            {slides.map((slide, index) => (
-                <div 
-                    key={index}
-                    className={`absolute inset-0 bg-gradient-to-b ${slide.bgGradient} transition-opacity duration-700 ease-in-out ${index === slideIndex ? 'opacity-100' : 'opacity-0'} z-0`}
-                ></div>
-            ))}
+            {/* Background */}
+            <div 
+                className={`absolute inset-0 bg-gradient-to-b ${featuredProduct.bgGradient} z-0`}
+            ></div>
 
             <div className="relative z-10 flex flex-col h-full p-8 text-[#2d2d2d]">
               <div className="flex justify-between items-start mb-6">
@@ -147,36 +116,19 @@ const NewReleaseSection: React.FC = () => {
                 <p className="text-sm text-[#4a3b45]/80">Up to 14" 2.8K PureSight Pro OLED display</p>
               </div>
               
-              {/* Slider Container */}
+              {/* Image Container - Image removed as requested, keeping background text */}
               <div className="relative flex-1 flex items-center justify-center my-4 overflow-hidden w-full">
                 <span className="absolute text-[80px] font-black text-purple-300/40 rotate-[-15deg] select-none pointer-events-none z-0">YOGA</span>
-                
-                <div 
-                  className="flex w-full transition-transform duration-700 ease-in-out z-10"
-                  style={{ transform: `translateX(-${slideIndex * 100}%)` }}
-                >
-                  {slides.map((slide, index) => (
-                    <div key={index} className="w-full shrink-0 flex justify-center items-center">
-                        <div className="animate-float">
-                            <img
-                            alt={slide.name}
-                            className="w-[240px] md:w-[180px] lg:w-[300px] transform group-hover:scale-105 transition-transform duration-500 drop-shadow-2xl"
-                            src={slide.image}
-                            />
-                        </div>
-                    </div>
-                  ))}
-                </div>
               </div>
 
               <div className="flex justify-between items-end mt-4 h-[80px]">
                 <div className="transition-all duration-300">
-                  <h4 className="font-bold text-xl text-[#2d2d2d]">{slides[slideIndex].name}</h4>
-                  <p className="text-sm text-[#555]">{slides[slideIndex].specs}</p>
+                  <h4 className="font-bold text-xl text-[#2d2d2d]">{featuredProduct.name}</h4>
+                  <p className="text-sm text-[#555]">{featuredProduct.specs}</p>
                   <div className="mt-2">
                     <span className="text-xs font-bold text-[#555] mr-1">NOW</span>
-                    <span className="text-3xl font-black text-[#2d2d2d]">{slides[slideIndex].price}</span>
-                    <div className="text-xs text-[#555] line-through decoration-red-500">SRP {slides[slideIndex].srp}</div>
+                    <span className="text-3xl font-black text-[#2d2d2d]">{featuredProduct.price}</span>
+                    <div className="text-xs text-[#555] line-through decoration-red-500">SRP {featuredProduct.srp}</div>
                   </div>
                 </div>
                 <div className="flex flex-col items-end">

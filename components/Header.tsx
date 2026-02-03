@@ -112,6 +112,18 @@ const Header: React.FC = () => {
 
           {/* Action Icons */}
           <div className="flex items-center gap-4 shrink-0">
+            {/* Utility Links - Visible on Large Screens */}
+            <div className="hidden lg:flex items-center gap-6 mr-4 border-r border-gray-700 pr-6 h-8">
+                <a href="#" className="flex items-center gap-2 text-white hover:text-ais-green transition-colors group">
+                    <span className="material-symbols-outlined text-[20px] text-gray-400 group-hover:text-ais-green transition-colors">storefront</span>
+                    <span className="text-[13px] font-bold tracking-wide">Find a Store</span>
+                </a>
+                <a href="#" className="flex items-center gap-2 text-white hover:text-ais-green transition-colors group">
+                    <span className="material-symbols-outlined text-[20px] text-gray-400 group-hover:text-ais-green transition-colors">person</span>
+                    <span className="text-[13px] font-bold tracking-wide">Login / Register</span>
+                </a>
+            </div>
+
             <button className="relative text-white hover:text-ais-green transition-colors">
               <span className="material-symbols-outlined !text-[28px]">shopping_bag</span>
               <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-600 text-[10px] font-bold flex items-center justify-center rounded-full text-white border border-black">0</span>

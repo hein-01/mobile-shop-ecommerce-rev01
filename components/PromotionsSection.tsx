@@ -119,8 +119,8 @@ const PromotionsSection: React.FC = () => {
                   </div>
                   <img
                     alt="Valore Powerbank"
-                    className="w-28 transform group-hover:-translate-y-2 transition-transform duration-500 drop-shadow-lg"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBsF5vqqY-CVOEP9MYvbJm_y289a3Sr_V9J4Gbe4cRrGx7wOpGHFmL5fb5DLfH2bJlDk0i87gFo0zqZzjTdVFHLTnWHnr2HBUelFQ1zBmF5x_PpbZp0ii-UsRbYUVJDZ7Hx2-yeiVbGcUEl8dbmIgc1Dpjd13Z4-OElVZhH98Ef63vrCsAf7p1KwdMCAQ7b4Vv2EqwOLJGgmO14Zyui-FvCtXlQGm6DtS3aIdQdGESvNS8ZfmKO7s75CkypS7HGHVhHQ-MTsBmLSM"
+                    className="w-36 transform group-hover:-translate-y-2 transition-transform duration-500 drop-shadow-lg"
+                    src="https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2820%29.svg"
                   />
                 </div>
               </div>

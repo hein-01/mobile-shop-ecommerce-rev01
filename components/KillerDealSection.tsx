@@ -4,7 +4,7 @@ const KillerDealSection: React.FC = () => {
   return (
     <section className="w-full px-4 pt-6 pb-2 bg-[#E0E7EB]">
       <div className="max-w-[1400px] mx-auto">
-        <div className="flex flex-col md:flex-row rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-200 bg-white h-auto md:h-[300px] relative group">
+        <div className="flex flex-col md:flex-row rounded-[24px] overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-200 bg-white h-auto md:h-[340px] relative group">
           
           {/* Left Side (Purple) */}
           <div className="w-full md:w-[32%] bg-[#8B5CF6] p-6 lg:p-8 flex flex-col justify-center relative overflow-hidden shrink-0">
@@ -41,8 +41,8 @@ const KillerDealSection: React.FC = () => {
              <div className="w-full md:w-[45%] flex items-center justify-center p-2 mb-4 md:mb-0">
                 <img 
                     src="https://raw.githubusercontent.com/hein-01/ai_websites/main/TechDance%20%2880%20x%2080%20px%29%20%2814%29.svg" 
-                    alt="iPad" 
-                    className="max-h-[200px] lg:max-h-[240px] object-contain drop-shadow-xl hover:scale-105 transition-transform duration-300"
+                    alt="Smart Band" 
+                    className="max-h-[300px] lg:max-h-[350px] object-contain drop-shadow-xl hover:scale-[1.85] transition-transform duration-300 transform scale-[1.75]"
                 />
              </div>
 
