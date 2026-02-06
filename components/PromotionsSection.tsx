@@ -53,7 +53,7 @@ const PromotionsSection: React.FC = () => {
                   <span className="bg-yellow-400 text-[#b71c1c] text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Lenovo</span>
                   <div className="flex flex-col items-end">
                     <span className="text-xs font-medium opacity-80">Up to</span>
-                    <span className="text-3xl font-black text-yellow-300 leading-none">K80</span>
+                    <span className="text-3xl font-black text-yellow-300 leading-none">K80,000</span>
                     <span className="text-[10px] font-bold uppercase tracking-widest opacity-80">Voucher</span>
                   </div>
                 </div>
@@ -114,8 +114,8 @@ const PromotionsSection: React.FC = () => {
                 </div>
                 <div className="flex items-end justify-between mt-auto">
                   <div className="flex flex-col">
-                    <span className="text-[10px] text-gray-400 line-through">U.P. K74.90</span>
-                    <span className="text-2xl font-black text-orange-500">K54.90</span>
+                    <span className="text-[10px] text-gray-400 line-through">U.P. K75,000</span>
+                    <span className="text-2xl font-black text-orange-500">K55,000</span>
                   </div>
                   <img
                     alt="Valore Powerbank"
@@ -148,7 +148,7 @@ const PromotionsSection: React.FC = () => {
                 <div className="mt-auto flex justify-between items-end border-t border-blue-800/50 pt-3">
                   <div className="flex flex-col">
                     <span className="text-[9px] text-blue-300">TUF Gaming A16</span>
-                    <span className="text-lg font-bold text-white">K1,399</span>
+                    <span className="text-lg font-bold text-white">K1,399,000</span>
                   </div>
                   <div className="bg-blue-600 p-1.5 rounded-lg">
                     <span className="material-symbols-outlined text-white text-sm">arrow_forward</span>
