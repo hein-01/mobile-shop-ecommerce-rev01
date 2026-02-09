@@ -39,7 +39,7 @@ const offers = [
   },
   {
     id: 4,
-    image: "https://placehold.co/600x330/000000/FFFFFF.png?text=The+1",
+    image: "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=800&auto=format&fit=crop",
     bgColor: "bg-gradient-to-br from-[#ffccbc] to-[#ffab91]", // Rose/Orange
     borderColor: "border-orange-200",
     customContent: (
